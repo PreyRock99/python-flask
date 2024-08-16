@@ -10,11 +10,15 @@ jobs:
 
     steps:
       - checkout
-      - python/install-packages:
-          pkg-manager: pip
+      - run:
+          name: Update pip
+          command: pip install --upgrade pip
+      - run:
+          name: Install dependencies
+          command: pip install -r requirements.txt
       - run:
           name: Run tests
-          command: pytest
+          command: pytest --html=report.html --self-contained-html
 
 workflows:
   version: 2
