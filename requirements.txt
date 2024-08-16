@@ -1,6 +1,8 @@
 pylint == 2.4.3
 pytest==7.4.0
-pytest-html == 2.0.0
 flask == 1.0.0 
-pytest-html ==4.0.0
+pylint==2.4.3
+pytest==7.4.0
+pytest-html==4.0.0  # Updated to use only one version
+flask==1.0.0
 
