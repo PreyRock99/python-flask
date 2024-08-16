@@ -1,8 +1,5 @@
-pylint == 2.4.3
-pytest==7.4.0
-flask == 1.0.0 
 pylint==2.4.3
 pytest==7.4.0
-pytest-html==4.0.0  # Updated to use only one version
+pytest-html==4.0.0
 flask==1.0.0
-
+jinja2<3.0
